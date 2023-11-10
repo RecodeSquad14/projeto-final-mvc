@@ -41,6 +41,8 @@ As cores principais utilizadas no projeto foram escolhidas de modo a passar uma 
 
 - Anderson Soares da Rocha Silva (Vice-Líder) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anderson-rocha-silva/)
 
+- Marcos Paulo Daniel Custódio [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcos-custódio-b22bb7229/)
+
 
 ## Stacks utilizadas
 
