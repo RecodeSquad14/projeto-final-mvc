@@ -1,59 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Formulário Empresa</title>
-  <link rel="stylesheet" href="../../static/css/style.css"/> <!-- Importação do arquivo CSS que vamos editar -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Formulário Empresa</title>
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <!-- Importação do arquivo CSS que vamos editar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Importação da fonte -->
-</head>
-<body>
-  <h2 class="text-center mt-3" style="text-align: center;">Cadastro da Empresa</h2>
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
+  </head>
+  <body>
+    <h2 class="text-center mt-3" style="text-align: center"
+      >Cadastro da Empresa</h2
+    >
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- Formulário -->
+          <form>
+            <!-- CNPJ -->
+            <div class="form-group mb-3">
+              <label class="fw-bolder" for="cnpj">CNPJ da Empresa:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cnpj"
+                name="cnpj_unico"
+                placeholder="Informe o CNPJ"
+              />
+            </div>
 
-        <!-- Formulário -->
-        <form>
-          <!-- CNPJ -->
-          <div class="form-group mb-3">
-            <label class="fw-bolder" for="cnpj">CNPJ da Empresa:</label>
-            <input type="text" class="form-control" id="cnpj" name="cnpj_unico" placeholder="Informe o CNPJ">
-          </div>
+            <!-- Endereço -->
+            <div class="form-group mb-3">
+              <label class="fw-bolder" for="endereco">Endereço:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="endereco"
+                name="endereco"
+                placeholder="Informe o Endereço"
+                required
+              />
+            </div>
 
-          <!-- Endereço -->
-          <div class="form-group mb-3">
-            <label class="fw-bolder" for="endereco">Endereço:</label>
-            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Informe o Endereço" required>
-          </div>
+            <!-- Email Corporativo -->
+            <div class="form-group mb-3">
+              <label class="fw-bolder" for="email">E-mail Corporativo:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email_corporativo"
+                placeholder="Informe o Email Corporativo"
+                required
+              />
+            </div>
 
-          <!-- Email Corporativo -->
-          <div class="form-group mb-3">
-            <label class="fw-bolder" for="email">E-mail Corporativo:</label>
-            <input type="email" class="form-control" id="email" name="email_corporativo" placeholder="Informe o Email Corporativo" required>
-          </div>
+            <!-- Senha -->
+            <div class="form-group mb-3">
+              <label class="fw-bolder" for="senha">Senha:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="senha"
+                name="Id_empresa"
+                placeholder="Informe a Senha"
+                required
+              />
+            </div>
 
-          <!-- Senha -->
-          <div class="form-group mb-3">
-            <label class="fw-bolder" for="senha">Senha:</label>
-            <input type="password" class="form-control" id="senha" name="Id_empresa" placeholder="Informe a Senha" required>
-          </div>
-
-          <!-- Botão de Envio -->
-          <button type="submit" class="btn btn-dark">Cadastrar</button>
-        </form>
-
+            <!-- Botão de Envio -->
+            <button type="submit" class="btn btn-dark">Cadastrar</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Scripts do Bootstrap (jQuery e Popper.js são necessários para alguns componentes) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <!-- Scripts do Bootstrap (jQuery e Popper.js são necessários para alguns componentes) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
