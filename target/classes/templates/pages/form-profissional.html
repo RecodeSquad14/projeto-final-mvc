@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário em Bootstrap</title>
+
     <link rel="shortcut icon" href="/src/main/resources/static/img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="/src/main/resources/static/css/style.css" /> <!-- Importação do arquivo CSS que vamos editar -->
     
@@ -19,34 +20,34 @@
     
 
 <div class="container">
-    <h1>Formulário</h1>
+    <h1 class="text-center mt-3">Formulário</h1>
     <form>
-        <div class="form-group">
-            <label for="nome_completo">Nome</label>
+        <div class="form-group mb-3">
+            <label for="nome_completo" class="fw-bolder">Nome</label>
             <input type="text" class="form-control" id="nome_completo" name="nome_completo" required placeholder="Insira seu nome">
         </div>
-        <div class="form-group">
-            <label for="neurodivergencia">Área de atuação</label>
+        <div class="form-group mb-3">
+            <label for="neurodivergencia" class="fw-bolder">Área de atuação</label>
             <input type="text" class="form-control" id="areadeatuacao" name="areadeatuacao" required placeholder="Insira aqui a sua área de atuação">
         </div>
-        <div class="form-group">
-            <label for="nome">Nome CRP Único</label>
+        <div class="form-group mb-3">
+            <label for="nome" class="fw-bolder">Nome CRP Único</label>
             <input type="text" class="form-control" id="nome" name="nome_crp_unico" required placeholder="Insira seu CRP">
         </div>
-        <div class="form-group">
-            <label for="email">Email</label>
+        <div class="form-group mb-3">
+            <label for="email" class="fw-bolder">Email</label>
             <input type="email" class="form-control" id="email" name="email" required placeholder="Insira seu email profissional">
         </div>
-        <div class="form-group">
-            <label for="senha">Senha</label>
+        <div class="form-grou mb-3">
+            <label for="senha" class="fw-bolder">Senha</label>
             <input type="password" class="form-control" id="senha" name="senha" required placeholder="Insira uma senha">
         </div>        
         
         <div class="form-group mb-3">
-            <label for="data_nascimento">Data de Nascimento</label>
+            <label for="data_nascimento" class="fw-bolder">Data de Nascimento</label>
             <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" required>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-dark">Cadastrar</button>
     </form>
 </div>
 
