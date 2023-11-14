@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contatos</title>
-    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../static/img/logo.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/style.css" /> <!-- Importação do arquivo CSS que vamos editar -->
+    <link rel="stylesheet" href="../../static/css/style.css" /> <!-- Importação do arquivo CSS que vamos editar -->
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> <!-- Importação do arquivo CSS do bootstrap -->
     
@@ -42,7 +42,7 @@
         >
           <ul class="navbar-nav">       
             <li>
-              <img width="40px" src="../img/logo.png" alt="logo"/>
+              <img width="40px" src="../../static/img/logo.png" alt="logo"/>
             </li>              
             <li class="nav-item">              
               <a class="nav-link active" aria-current="page" href="../index.html">Neuro Conexão</a>
@@ -51,13 +51,13 @@
               <a class="nav-link active" aria-current="page" href="../index.html">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="conexao.html">Conexões</a>
+              <a class="nav-link" href="../pages/conexao.html">Conexões</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="treinamento.html">Treinamento</a>
+              <a class="nav-link" href="../pages/treinamento.html">Treinamento</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sobrenos.html">Sobre nós</a>
+              <a class="nav-link" href="../pages/sobrenos.html">Sobre nós</a>
             </li>            
           </ul>         
       </div>
@@ -126,10 +126,10 @@
             
             <ul class="nav flex-column">
 
-              <li class="nav-item mb-1"><a href="index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
-              <li class="nav-item mb-1"><a href="pages/conexao.html" class="nav-link p-0 text-body-secondary">Conexão</a></li>
-              <li class="nav-item mb-1"><a href="pages/treinamento.html" class="nav-link p-0 text-body-secondary">Treinamento</a></li>             
-              <li class="nav-item mb-1"><a href="pages/contatos.html" class="nav-link p-0 text-body-secondary">Contatos</a></li>
+              <li class="nav-item mb-1"><a href="../index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+              <li class="nav-item mb-1"><a href="../pages/conexao.html" class="nav-link p-0 text-body-secondary">Conexão</a></li>
+              <li class="nav-item mb-1"><a href="../pages/treinamento.html" class="nav-link p-0 text-body-secondary">Treinamento</a></li>             
+
 
             </ul>       
           </div>
@@ -140,19 +140,19 @@
             <ul class="nav flex-column">
               <li class="nav-item mb-1 d-flex">
                 <a href="#" target="_blank">
-                  <img src="../img/icones/whatsapp.png" alt="whatsapp" class="icon-img"">
+                  <img src="../../static/img/icones/whatsapp.png" alt="whatsapp" class="icon-img"">
                 </a>
                 
                 </li>
               <li class="nav-item mb-1 d-flex">
                 <a href="#" target="_blank">
-                  <img src="../img/icones/instagram.png" alt="instagram" class="icon-img">
+                  <img src="../../static/img/icones/instagram.png" alt="instagram" class="icon-img">
                 </a>
                   
                 </li>
               <li class="nav-item mb-1 d-flex">
                 <a href="#" target="_blank">
-                  <img src="../img/icones/facebook.png" alt="facebook" class="icon-img">
+                  <img src="../../static/img/icones/facebook.png" alt="facebook" class="icon-img">
                 </a>
                   
                 </li>          
@@ -163,11 +163,11 @@
             <form>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Endereço de Email">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Endereço de Email" name="email-contato">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Em que podemos ajudar?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text-area"></textarea>
                 <button type="submit" class="btn btn-dark mb-3 mt-3">Enviar</button>
               </div>
             </form>

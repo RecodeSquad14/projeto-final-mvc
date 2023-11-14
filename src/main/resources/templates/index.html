@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Início</title>
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../static/img/logo.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +46,7 @@
         >
           <ul class="navbar-nav">       
             <li>
-              <img width="40px" src="img/logo.png" alt=""/>
+              <img width="40px" src="../static/img/logo.png" alt=""/>
             </li>              
             <li class="nav-item">              
               <a class="nav-link active" aria-current="page" href="#">Neuro Conexão</a>
@@ -75,21 +75,21 @@
         <div class="about-content">
           <h1 class="about-title">Nossa missão é ajudar pessoas neurodiversas a encontrar uma empresa inclusiva</h1>
           <p id="about-paragraph">Bem-vindos ao nosso espaço inclusivo e inovador, onde a neurodiversidade encontra oportunidade. Nosso site é o ponto de encontro entre pessoas neurodivergentes e empresas comprometidas com a inclusão.</p>
-        <button class=" about-btn"><a href="pages/conexao.html">Conecte-se</a></button>
+        <button class=" about-btn"><a href="./pages/conexao.html">Conecte-se</a></button>
         </div>
         <div class="about-img">
-          <img src="img/3d-casual-life-young-boys-and-young-girl-jumping.png" alt="três pessoas felizes pulando" id="hero-img">
+          <img src="../static/img/home-img/hero-image.png" alt="três pessoas felizes pulando" id="hero-img">
         </div>
       </section>      
     </section>
     <!-- Section final -->
 
     <!-- Início do conteúdo -->
-    <section class="cards-section">
+    <section class="cards-section container">
       <div class="card mb-3 card-bg" style="max-width: 95%; border:none;min-height:50vh;">
         <div class="row g-0">
           <div class="col-md-4" data-aos="fade-right">
-            <img src="img/home-img/conexao.png" class="img-fluid rounded-start" alt="...">
+            <img src="../static/img/home-img/conexao.png" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -111,7 +111,7 @@
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-left">
-            <img src="img/home-img/treinamento.png" class="img-fluid rounded-start" alt="...">
+            <img src="../static/img/home-img/treinamento.png" class="img-fluid rounded-start" alt="...">
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@
       <div class="card mb-3 mt-5 card-bg" style="max-width: 95%; border:none;min-height:50vh;">
         <div class="row g-0">
           <div class="col-md-4" data-aos="fade-right">
-            <img src="img/home-img/squad14.png" class="img-fluid rounded-start" alt="...">
+            <img src="../static/img/home-img/squad14.png" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -147,7 +147,7 @@
               <li class="nav-item mb-1"><a href="index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
               <li class="nav-item mb-1"><a href="pages/conexao.html" class="nav-link p-0 text-body-secondary">Conexão</a></li>
               <li class="nav-item mb-1"><a href="pages/treinamento.html" class="nav-link p-0 text-body-secondary">Treinamento</a></li>             
-              <li class="nav-item mb-1"><a href="pages/contatos.html" class="nav-link p-0 text-body-secondary">Contatos</a></li>
+
 
             </ul>       
           </div>
@@ -158,19 +158,19 @@
             <ul class="nav flex-column">
               <li class="nav-item mb-1 d-flex">
                 <a href="#" target="_blank">
-                  <img src="img/icones/whatsapp.png" alt="whatsapp" class="icon-img"">
+                  <img src="../static/img/icones/whatsapp.png" alt="whatsapp" class="icon-img"">
                 </a>
                 
                 </li>
               <li class="nav-item mb-1 d-flex">
                 <a href="#" target="_blank">
-                  <img src="img/icones/instagram.png" alt="instagram" class="icon-img">
+                  <img src="../static/img/icones/instagram.png" alt="instagram" class="icon-img">
                 </a>
                   
                 </li>
               <li class="nav-item mb-1 d-flex">
                 <a href="#" target="_blank">
-                  <img src="img/icones/facebook.png" alt="facebook" class="icon-img">
+                  <img src="../static/img/icones/facebook.png" alt="facebook" class="icon-img">
                 </a>
                   
                 </li>          
@@ -181,11 +181,11 @@
             <form>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Endereço de Email">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Endereço de Email" name="email-contato">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Em que podemos ajudar?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text-area"></textarea>
                 <button type="submit" class="btn btn-dark mb-3 mt-3">Enviar</button>
               </div>
             </form>
