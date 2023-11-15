@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,32 +21,28 @@
 
 <div class="container">
     <h1 class="text-center mt-3">Formulário</h1>
-    <form>
+    <form th:action="@{/profissional/save}" th:object="${profissional}" method="post">
         <div class="form-group mb-3">
             <label for="nome_completo" class="fw-bolder">Nome</label>
-            <input type="text" class="form-control" id="nome_completo" name="nome_completo" required placeholder="Insira seu nome">
+            <input type="text" class="form-control" id="nome_completo" name="nome_completo" required placeholder="Insira seu nome"  th:field="*{nome}">
         </div>
         <div class="form-group mb-3">
             <label for="neurodivergencia" class="fw-bolder">Área de atuação</label>
-            <input type="text" class="form-control" id="areadeatuacao" name="areadeatuacao" required placeholder="Insira aqui a sua área de atuação">
+            <input type="text" class="form-control" id="areadeatuacao" name="areadeatuacao" required placeholder="Insira aqui a sua área de atuação" th:field="*{area_de_atuacao}">
         </div>
         <div class="form-group mb-3">
             <label for="nome" class="fw-bolder">Nome CRP Único</label>
-            <input type="text" class="form-control" id="nome" name="nome_crp_unico" required placeholder="Insira seu CRP">
+            <input type="text" class="form-control" id="nome" name="nome_crp_unico" required placeholder="Insira seu CRP"  th:field="*{crp}">
         </div>
         <div class="form-group mb-3">
             <label for="email" class="fw-bolder">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required placeholder="Insira seu email profissional">
+            <input type="email" class="form-control" id="email" name="email" required placeholder="Insira seu email profissional"  th:field="*{email}">
         </div>
         <div class="form-grou mb-3">
             <label for="senha" class="fw-bolder">Senha</label>
-            <input type="password" class="form-control" id="senha" name="senha" required placeholder="Insira uma senha">
+            <input type="password" class="form-control" id="senha" name="senha" required placeholder="Insira uma senha" th:field="*{senha}">
         </div>        
         
-        <div class="form-group mb-3">
-            <label for="data_nascimento" class="fw-bolder">Data de Nascimento</label>
-            <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" required>
-        </div>
         <button type="submit" class="btn btn-dark">Cadastrar</button>
     </form>
 </div>
