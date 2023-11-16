@@ -120,45 +120,50 @@ hr {
 }
 
 /* TREINAMENTO */
-.conteiner-treinamento {
+.treinamento-container {
+  min-height: 100vh; /* Altura mínima da seção */
+  padding: 10px;
   display: flex;
-  align-items: center;
-  align-items: stretch;
-  justify-content: center;
-  min-height: 90vh;
+   /* Centraliza o conteúdo horizontalmente */
+/* Alinha os cards no início verticalmente */
+}
+
+.card-container {
+  display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 20px 0px 20px 0px;
-}
-.card-treinamento {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  padding: 10px;
+  max-height: 150px;
   align-items: center;
-  box-shadow: 20px 20px 50px -30px var(--cor-primaria);
+  gap: 20px; /* Espaçamento entre os cards */
+  /* Largura máxima do contêiner */
+  /* Outros estilos necessários */
 }
 
-.card-treinamento1 {
-  box-shadow: 20px 20px 50px -30px var(--cor-primaria);
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px; /* largura do card */
+  /* outros estilos */
 }
 
-.card-treinamento2 {
-  box-shadow: 20px 20px 50px -30px var(--cor-secundaria);
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-.card-treinamento3 {
-  box-shadow: 20px 20px 50px -30px var(--cor-terciaria);
+.card-description {
+  font-size: 1em;
+  color: #555;
 }
 
-.text-treinamento {
-  text-indent: 20px;
-}
+
 
 /* FOOTER */
 
 .footerstyle {
   background-color: var(--gray);
-}
+  
 .icon-img {
   width: 25%;
 }
