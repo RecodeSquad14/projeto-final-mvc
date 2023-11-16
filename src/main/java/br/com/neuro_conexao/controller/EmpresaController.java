@@ -1,27 +1,34 @@
 package br.com.neuro_conexao.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.neuro_conexao.model.Empresa;
+import br.com.neuro_conexao.services.EmpresaService;
 
 @Controller
+@RequestMapping("/empresas")
 public class EmpresaController {
+	@Autowired
+	private EmpresaService empresaService;
 	
-	@GetMapping("/Empresas")
+	@GetMapping("/listar")
 	public String ListEmpresas(Model model) {
-		
-		List<Empresa> empresas = new ArrayList<>();
-		
-		empresas.add(new Empresa((long) 1, "Empresa ABC", "12345678901234", "Rua A, 123", "contato@empresaabc.com", "senha123"));
-		empresas.add(new Empresa((long) 2, "Empresa XYZ", "56789012345678", "Avenida B, 456", "contato@empresaxyz.com", "senha456"));
+		List<Empresa> empresas = empresaService.getAllEmpresas();
 		model.addAttribute("empresas", empresas);
-		
-		
-		return "empresas";
+		return "empresas-adm";
 	}
+	
+	public String showFormAdd(Model model) {
+		Empresa empresa = new Empresa();
+		model.addAttribute("empresa",empresa);
+		return "form-empresa";
+	}
+	
+	 
 }
