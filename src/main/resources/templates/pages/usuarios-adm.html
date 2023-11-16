@@ -12,7 +12,7 @@
       <h2>Lista de Usuários</h2>
 
       <!-- Formulário de pesquisa -->
-      <form th:action="@{/usuarios}" method="get" class="form-inline mb-2">
+      <form class="form-inline mb-2">
         <input
           type="text"
           th:name="keyword"
@@ -36,19 +36,19 @@
         </thead>
         <tbody>
           <!-- Substitua 'users' pelo nome da sua lista de usuários no controlador -->
-          <tr th:each="user : ${users}">
-            <td th:text="${user.id}"></td>
-            <td th:text="${user.nome}"></td>
-            <td th:text="${user.email}"></td>
-            <td th:text="${user.senha}"></td>
+          <tr th:each="neurodiverso : ${neurodiversos}">
+            <td th:text="${neurodiverso.id_neurodiverso}"></td>
+            <td th:text="${neurodiverso.nome}"></td>
+            <td th:text="${neurodiverso.email}"></td>
+            <td th:text="${neurodiverso.senha}"></td>
             <td>
               <a
-                th:href="@{'/editar/' + ${user.id}}"
+                th:href="@{'/editar/' + ${neurodiverso.id_neurodiverso}}"
                 class="btn btn-primary btn-sm"
                 >Editar</a
               >
               <a
-                th:href="@{'/excluir/' + ${user.id}}"
+                th:href="@{'/excluir/' + ${neurodiverso.id_neurodiverso}}"
                 class="btn btn-danger btn-sm"
                 >Excluir</a
               >
