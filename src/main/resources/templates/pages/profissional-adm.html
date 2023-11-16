@@ -29,6 +29,7 @@
           <tr>
             <th>ID</th>
             <th>Nome</th>
+            <th>CRP</th>
             <th>Email</th>
             <th>Senha</th>
             <th>Ações</th>
@@ -37,18 +38,19 @@
         <tbody>
           <!-- Substitua 'users' pelo nome da sua lista de usuários no controlador -->
           <tr th:each="profissional : ${profissionais}">
-            <td th:text="${profissional.id_profissional}"></td>
+            <td th:text="${profissional.id}"></td>
             <td th:text="${profissional.nome}"></td>
+            <td th:text="${profissional.crp}"></td>
             <td th:text="${profissional.email}"></td>
             <td th:text="${profissional.senha}"></td>
             <td>
               <a
-                th:href="@{'/profissional/editar/' + ${profissional.id_profissional}}"
+                th:href="@{'/profissionais/editar/' + ${profissional.id}}"
                 class="btn btn-primary btn-sm"
                 >Editar</a
               >
               <a
-                th:href="@{'/profissional/excluir/' + ${profissional.id_profissional}}"
+                th:href="@{'/profissionais/deletar/' + ${profissional.id}}"
                 class="btn btn-danger btn-sm"
                 >Excluir</a
               >

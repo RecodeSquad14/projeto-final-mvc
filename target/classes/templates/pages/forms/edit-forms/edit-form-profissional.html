@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atualização de cadastro</title>
+
+    <link
+      rel="shortcut icon"
+      href="/src/main/resources/static/img/logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/src/main/resources/static/css/style.css" />
+    <!-- Importação do arquivo CSS que vamos editar -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importação da fonte -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- Importação do arquivo CSS do bootstrap -->
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-3">Atualização de Cadastro</h1>
+      <form th:action="@{/profissionais/editar/{id}(id=${profissional.id})}" th:object="${profissional}" method="post">
+       
+       	<div class="form-group mb-3">
+				<label for="nome_completo" class="fw-bolder">Nome</label>
+				<input type="text" class="form-control" id="nome_completo" name="nome_completo" required
+					placeholder="Insira seu nome" th:field="*{nome}">
+			</div>
+			<div class="form-group mb-3">
+				<label for="neurodivergencia" class="fw-bolder">Área de atuação</label>
+				<input type="text" class="form-control" id="area_de_atuacao" name="area_de_atuacao" th:readonly="readonly">
+			</div>
+			<div class="form-group mb-3">
+				<label for="nome" class="fw-bolder">Nome CRP Único</label>
+				<input type="text" class="form-control" id="nome" name="nome_crp_unico" th:readonly="readonly">
+			</div>
+			<div class="form-group mb-3">
+				<label for="cpf" class="fw-bolder">Cpf</label>
+				<input type="cpf" class="form-control" id="cpf" name="cpf" th:readonly="readonly">
+			</div>
+			<div class="form-group mb-3">
+				<label for="email" class="fw-bolder">Email</label>
+				<input type="email" class="form-control" id="email" name="email" required
+					placeholder="Insira seu Email" th:field="*{email}">
+			</div>
+			<div class="form-grou mb-3">
+				<label for="senha" class="fw-bolder">Senha</label>
+				<input type="password" class="form-control" id="senha" name="senha" required
+					placeholder="Insira uma senha" th:field="*{senha}">
+			</div>
+        <button type="submit" class="btn btn-dark">Atualizar</button>
+      </form>
+    </div>
+
+    <!-- Inclua os links para os arquivos JavaScript do Bootstrap (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

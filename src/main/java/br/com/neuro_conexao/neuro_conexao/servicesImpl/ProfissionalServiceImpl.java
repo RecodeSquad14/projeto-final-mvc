@@ -28,8 +28,8 @@ import br.com.neuro_conexao.neuro_conexao.services.ProfissionalService;
 
 		@Override
 		@Transactional(readOnly = true)
-		public Profissional getProfissionalById(Long id_profissional) {
-			return profissionalRepository.findById(id_profissional).orElse(null);
+		public Profissional getProfissionalById(Long id) {
+			return profissionalRepository.findById(id).orElse(null);
 		}
 
 		@Override
@@ -56,7 +56,6 @@ import br.com.neuro_conexao.neuro_conexao.services.ProfissionalService;
 		@Override
 		public void deleteProfissional(Long id) {
 			profissionalRepository.deleteById(id);
-			
 		}
 		
 		
