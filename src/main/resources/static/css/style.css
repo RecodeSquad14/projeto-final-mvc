@@ -124,8 +124,8 @@ hr {
   min-height: 100vh; /* Altura mínima da seção */
   padding: 10px;
   display: flex;
-   /* Centraliza o conteúdo horizontalmente */
-/* Alinha os cards no início verticalmente */
+  /* Centraliza o conteúdo horizontalmente */
+  /* Alinha os cards no início verticalmente */
 }
 
 .card-container {
@@ -157,13 +157,11 @@ hr {
   color: #555;
 }
 
-
-
 /* FOOTER */
 
 .footerstyle {
   background-color: var(--gray);
-  
+}
 .icon-img {
   width: 25%;
 }
@@ -360,34 +358,34 @@ main.cards section.card.about {
 /* PAGINA LOGIN*/
 
 :root {
---color-1: #484ca4;
---color-2: #60AED2;
---color-3: #484ca4;
---color-4: beige;
+  --color-1: #484ca4;
+  --color-2: #60aed2;
+  --color-3: #484ca4;
+  --color-4: beige;
 }
 
 .login-body {
-  font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
   width: 100%;
   margin: 0;
   padding: 0;
   background-color: #f1f1f1;
   display: grid;
-  grid-template-columns:  60% 40%;
+  grid-template-columns: 60% 40%;
 }
-.fundo-lado-esquerdo{
+.fundo-lado-esquerdo {
   background-color: var(--cor-primaria-escura); /* #484ca4;*/
   height: 100%;
   width: 90%;
 }
-.lado-esquerdo-text{
+.lado-esquerdo-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color:var(--color-4);
+  color: var(--color-4);
 }
-.lado-esquerdo-text h2{
+.lado-esquerdo-text h2 {
   margin-top: 30px;
   margin-bottom: 0;
   font-size: 40px;
@@ -402,18 +400,18 @@ main.cards section.card.about {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  color:var(--color-4);
+  color: var(--color-4);
 }
 .btn-header a {
-  color:var(--color-4);
+  color: var(--color-4);
   text-decoration: none;
   font-size: 13px;
 }
-.lado-esquerdo-text p{
+.lado-esquerdo-text p {
   font-size: 15px;
 }
 
-.login-imagem{
+.login-imagem {
   width: 60%;
   height: 65%;
   position: relative;
@@ -421,7 +419,7 @@ main.cards section.card.about {
   top: 5%;
 }
 .container {
-  height: fit-content + 100px ;
+  height: fit-content + 100px;
   position: relative;
   right: 10px;
   width: 90%;
@@ -431,15 +429,15 @@ main.cards section.card.about {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form, .form{
- 
+form,
+.form {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   align-items: center;
 }
-.form input{
+.form input {
   border: none;
   background-color: #f0f0f0;
   border-radius: 10px;
@@ -448,10 +446,10 @@ form, .form{
   width: 70%;
   margin: 10px 0px;
 }
-.form .button{
+.form .button {
   width: 70%;
   padding: 10px;
-  background-color: var(--cor-secundaria-escura) ;
+  background-color: var(--cor-secundaria-escura);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -459,7 +457,7 @@ form, .form{
   margin-top: 10px;
   text-align: center;
 }
-.login-a{
+.login-a {
   font-size: 14px;
   margin-top: 5px;
   text-decoration: none;
