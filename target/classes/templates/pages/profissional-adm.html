@@ -29,6 +29,7 @@
           <tr>
             <th>ID</th>
             <th>Nome</th>
+            <th>CRP</th>
             <th>Email</th>
             <th>Senha</th>
             <th>Ações</th>
@@ -39,6 +40,7 @@
           <tr th:each="profissional : ${profissionais}">
             <td th:text="${profissional.id}"></td>
             <td th:text="${profissional.nome}"></td>
+            <td th:text="${profissional.crp}"></td>
             <td th:text="${profissional.email}"></td>
             <td th:text="${profissional.senha}"></td>
             <td>
