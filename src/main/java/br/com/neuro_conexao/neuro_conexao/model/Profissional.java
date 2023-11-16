@@ -33,6 +33,25 @@ public class Profissional {
 	
 	@OneToMany(mappedBy="profissional")
 	private Set<Treinamento_empresa> treinamentos;
+	
+	@OneToMany(mappedBy="profissional")
+	private Set<Treinamento_familiares> treinamento_familiares;
+
+	public Set<Treinamento_empresa> getTreinamentos() {
+		return treinamentos;
+	}
+
+	public void setTreinamentos(Set<Treinamento_empresa> treinamentos) {
+		this.treinamentos = treinamentos;
+	}
+
+	public Set<Treinamento_familiares> getTreinamento_familiares() {
+		return treinamento_familiares;
+	}
+
+	public void setTreinamento_familiares(Set<Treinamento_familiares> treinamento_familiares) {
+		this.treinamento_familiares = treinamento_familiares;
+	}
 
 	public Profissional() {}
 	
