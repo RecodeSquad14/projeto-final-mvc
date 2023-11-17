@@ -124,8 +124,8 @@ hr {
   min-height: 100vh; /* Altura mínima da seção */
   padding: 10px;
   display: flex;
-   /* Centraliza o conteúdo horizontalmente */
-/* Alinha os cards no início verticalmente */
+  /* Centraliza o conteúdo horizontalmente */
+  /* Alinha os cards no início verticalmente */
 }
 
 .card-container {
@@ -157,13 +157,11 @@ hr {
   color: #555;
 }
 
-
-
 /* FOOTER */
 
 .footerstyle {
   background-color: var(--gray);
-  
+}
 .icon-img {
   width: 25%;
 }
@@ -360,6 +358,7 @@ main.cards section.card.about {
 /* PAGINA LOGIN*/
 
 :root {
+<<<<<<< HEAD
 --color-1: #484ca4;
 --color-2: #60AED2;
 --color-3: #484ca4;
@@ -368,26 +367,52 @@ main.cards section.card.about {
 
 .login-body {
   font-family: 'Arvo', serif;
+=======
+  --color-1: #484ca4;
+  --color-2: #60aed2;
+  --color-3: #484ca4;
+  --color-4: beige;
+}
+
+.login-body {
+  font-family: "Arvo", serif;
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
   width: 100%;
   margin: 0;
   padding: 0;
   background-color: #f1f1f1;
   display: grid;
+<<<<<<< HEAD
   grid-template-columns:  60% 40%;
 }
 .fundo-lado-esquerdo{
+=======
+  grid-template-columns: 60% 40%;
+}
+.fundo-lado-esquerdo {
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
   background-color: var(--cor-primaria-escura); /* #484ca4;*/
   height: 100%;
   width: 90%;
 }
+<<<<<<< HEAD
 .lado-esquerdo-text{
+=======
+.lado-esquerdo-text {
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   color:var(--color-4);
 }
 .lado-esquerdo-text h2{
+=======
+  color: var(--color-4);
+}
+.lado-esquerdo-text h2 {
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
   margin-top: 30px;
   margin-bottom: 0;
   font-size: 40px;
@@ -402,6 +427,7 @@ main.cards section.card.about {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+<<<<<<< HEAD
   color:var(--color-4);
 }
 .btn-header a {
@@ -414,6 +440,20 @@ main.cards section.card.about {
 }
 
 .login-imagem{
+=======
+  color: var(--color-4);
+}
+.btn-header a {
+  color: var(--color-4);
+  text-decoration: none;
+  font-size: 13px;
+}
+.lado-esquerdo-text p {
+  font-size: 15px;
+}
+
+.login-imagem {
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
   width: 60%;
   height: 65%;
   position: relative;
@@ -421,7 +461,11 @@ main.cards section.card.about {
   top: 5%;
 }
 .container {
+<<<<<<< HEAD
   height: fit-content + 100px ;
+=======
+  height: fit-content + 100px;
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
   position: relative;
   right: 10px;
   width: 90%;
@@ -431,15 +475,24 @@ main.cards section.card.about {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 form, .form{
  
+=======
+form,
+.form {
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   align-items: center;
 }
+<<<<<<< HEAD
 .form input{
+=======
+.form input {
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
   border: none;
   background-color: #f0f0f0;
   border-radius: 10px;
@@ -448,10 +501,17 @@ form, .form{
   width: 70%;
   margin: 10px 0px;
 }
+<<<<<<< HEAD
 .form .button{
   width: 70%;
   padding: 10px;
   background-color: var(--cor-secundaria-escura) ;
+=======
+.form .button {
+  width: 70%;
+  padding: 10px;
+  background-color: var(--cor-secundaria-escura);
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -459,8 +519,16 @@ form, .form{
   margin-top: 10px;
   text-align: center;
 }
+<<<<<<< HEAD
 .login-a{
   font-size: 14px;
   margin-top: 5px;
   text-decoration: none;
 }
+=======
+.login-a {
+  font-size: 14px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
