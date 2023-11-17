@@ -31,10 +31,6 @@ As cores principais utilizadas no projeto foram escolhidas de modo a passar uma 
 ### Alunos: 
 - Alfannya Tannyane Santos Abrantes [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alfanya-a-277773bb/)
 
-- Aline Conceição Monteiro [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aline-monteiro-0a7212128/)
-
-- Aline Freire da Silva Santos [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aline-freire-504b42180/)
-
 - Ana Clara Correia Amorim dos Santos (Líder) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anaclaracamorim/)
 
 - Anderson Borba Silva [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anderson-borba-silva-54592481/)
