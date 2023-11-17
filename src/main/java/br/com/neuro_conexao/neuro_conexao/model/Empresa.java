@@ -1,4 +1,4 @@
-package br.com.neuro_conexao.model;
+package br.com.neuro_conexao.neuro_conexao.model;
 
 import java.util.HashSet;
 import java.util.Set;

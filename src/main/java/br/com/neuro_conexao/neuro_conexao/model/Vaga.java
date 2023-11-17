@@ -1,4 +1,4 @@
-package br.com.neuro_conexao.model;
+package br.com.neuro_conexao.neuro_conexao.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

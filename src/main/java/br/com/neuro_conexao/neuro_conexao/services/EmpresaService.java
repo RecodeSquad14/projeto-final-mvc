@@ -1,8 +1,8 @@
-package br.com.neuro_conexao.services;
+package br.com.neuro_conexao.neuro_conexao.services;
 
 import java.util.List;
 
-import br.com.neuro_conexao.model.Empresa;
+import br.com.neuro_conexao.neuro_conexao.model.Empresa;
 
 public interface EmpresaService {
 	

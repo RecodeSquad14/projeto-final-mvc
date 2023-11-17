@@ -1,14 +1,16 @@
-package br.com.neuro_conexao.servicesImpl;
+package br.com.neuro_conexao.neuro_conexao.servicesImpl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.neuro_conexao.model.Vaga;
-import br.com.neuro_conexao.repositories.VagaRepository;
-import br.com.neuro_conexao.services.VagaService;
+import br.com.neuro_conexao.neuro_conexao.model.Vaga;
+import br.com.neuro_conexao.neuro_conexao.repositories.VagaRepository;
+import br.com.neuro_conexao.neuro_conexao.services.VagaService;
 
+@Service
 public class VagaServiceImpl implements VagaService{
 	
 	@Autowired
