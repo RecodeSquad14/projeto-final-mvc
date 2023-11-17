@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conexão</title>
-    <link rel="shortcut icon" href="../../static/img/logo.png" type="image/x-icon">
+    <title>Treinamento</title>
+    <link rel="shortcut icon" href="/src/main/resources/static/img/logo.ico" type="image/x-icon">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../static/css/style.css" /> <!-- Importação do arquivo CSS que vamos editar -->
+    <link rel="stylesheet" href="/src/main/resources/static/css/style.css" /> <!-- Importação do arquivo CSS que vamos editar -->
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> <!-- Importação do arquivo CSS do bootstrap -->
     
@@ -15,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Importação da fonte -->
+  
   </head>
   <body>
     
@@ -39,22 +43,22 @@
         >
           <ul class="navbar-nav">       
             <li>
-              <img width="40px" src="../../static/img/logo.png" alt="logo"/>
+              <img width="40px" src="/src/main/resources/static/img/logo.ico" alt="logo"/>
             </li>              
             <li class="nav-item">              
-              <a class="nav-link active" aria-current="page" href="../index.html">Neuro Conexão</a>
+              <a class="nav-link active" aria-current="page" href="/src/main/resources/templates/index.html">Neuro Conexão</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Início</a>
+              <a class="nav-link active" aria-current="page" href="/src/main/resources/templates/index.html">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/conexao.html">Conexões</a>
+              <a class="nav-link" href="/src/main/resources/templates/pages/conexao.html">Conexões</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/treinamento.html">Treinamento</a>
+              <a class="nav-link" href="/src/main/resources/templates/pages/treinamento.html">Treinamento</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/sobrenos.html">Sobre nós</a>
+              <a class="nav-link" href="/src/main/resources/templates/pages/sobrenos.html">Sobre nós</a>
             </li>            
           </ul>         
       </div>
@@ -68,7 +72,7 @@
     <div class="card mt-5" style="max-width: 1200px; border:none;min-height:50vh; padding: 10px; ">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="../../static/img/conexao-img/profissionalNeurotipico.png" class="img-fluid rounded-start" alt="...">
+          <img src="/src/main/resources/static/img/conexao-img/profissionalNeurotipico.png" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -96,7 +100,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <img src="../../static/img/conexao-img/empresa.png" class="img-fluid rounded-start" alt="...">
+              <img src="/src/main/resources/static/img/conexao-img/empresa.png" class="img-fluid rounded-start" alt="...">
             </div>
           </div>
         </div>
@@ -109,7 +113,7 @@
     <div class="card " style="max-width: 1200px; border:none;min-height:50vh; padding: 10px; ">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="../../static/img/conexao-img/profissionalSaude.png" class="img-fluid rounded-start" alt="..">
+          <img src="/src/main/resources/static/img/conexao-img/profissionalSaude.png" class="img-fluid rounded-start" alt="..">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -124,27 +128,27 @@
       <!--FIM profissional Saúde-->
       <!--INCIO cadastro-->
       <main class="cards">
-        <h2 class="fw-bolder" style="font-size: 28px;">Cadastre-se</h2>
+        <h3 class="fw-bolder">Cadastre-se</h3>
         <p>Seja a mudança que você quer ver no mundo profissional. Contamos com você para construir um futuro onde a diversidade é o nosso maior trunfo!</p>
         <div class="container-cards">
           <section class="card contact">
               <div class="icon">
-                  <img src="../../static/img/conexao-img/profissionalNeurotipico.png" alt="Contact us.">
+                  <img src="/src/main/resources/static/img/conexao-img/profissionalNeurotipico.png" alt="Contact us.">
               </div>
-              <a href="./forms/form-neurodiverso.html"><button>Sou Neurodiverso</button></a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSd364PsAhoodXfXCQ1VY5WNElsgzGfEgse2n7kDH0Kpxpwx5w/viewform" target="_blank"><button>Sou Neurodiverso</button></a>
           </section>
           <section class="card shop">
               <div class="icon">
-                  <img src="../../static/img/conexao-img/empresa.png" alt="Shop here.">
+                  <img src="/src/main/resources/static/img/conexao-img/empresa.png" alt="Shop here.">
               </div>
   
-              <a href="./forms/form-empresa.html" ><button>Sou empresa</button></a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfURCevTYBXfe18eRRPnuklbIe6VlqJHm_-Mw7Qtk_WyV7N-g/viewform" target="_blank"><button>Sou empresa</button></a>
           </section>
           <section class="card about">
               <div class="icon">
-                  <img src="../../static/img/conexao-img/profissionalSaude.png" alt="About us.">
+                  <img src="/src/main/resources/static/img/conexao-img/profissionalSaude.png" alt="About us.">
               </div>
-              <a href="./forms/form-profissional.html" ><button>Sou psicólogo</button></a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSd364PsAhoodXfXCQ1VY5WNElsgzGfEgse2n7kDH0Kpxpwx5w/viewform" target="_blank"><button>Sou psicólogo</button></a>
           </section>
         </div>
       </main>
@@ -163,10 +167,10 @@
           
           <ul class="nav flex-column">
 
-            <li class="nav-item mb-1"><a href="../index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
-            <li class="nav-item mb-1"><a href="../pages/conexao.html" class="nav-link p-0 text-body-secondary">Conexão</a></li>
-            <li class="nav-item mb-1"><a href="../pages/treinamento.html" class="nav-link p-0 text-body-secondary">Treinamento</a></li>             
-         
+            <li class="nav-item mb-1"><a href="/src/main/resources/templates/index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+            <li class="nav-item mb-1"><a href="/src/main/resources/templates/pages/conexao.html" class="nav-link p-0 text-body-secondary">Conexão</a></li>
+            <li class="nav-item mb-1"><a href="/src/main/resources/templates/pages/treinamento.html" class="nav-link p-0 text-body-secondary">Treinamento</a></li>             
+            <li class="nav-item mb-1"><a href="/src/main/resources/templates/pages/sobrenos.html" class="nav-link p-0 text-body-secondary">Contatos</a></li>
 
           </ul>       
         </div>
@@ -177,19 +181,19 @@
           <ul class="nav flex-column">
             <li class="nav-item mb-1 d-flex">
               <a href="#" target="_blank">
-                <img src="../../static/img/icones/whatsapp.png" alt="whatsapp" class="icon-img"">
+                <img src="/src/main/resources/static/img/icones/whatsapp.png" alt="whatsapp" class="icon-img"">
               </a>
               
               </li>
             <li class="nav-item mb-1 d-flex">
               <a href="#" target="_blank">
-                <img src="../../static/img/icones/instagram.png" alt="instagram" class="icon-img">
+                <img src="/src/main/resources/static/img/icones/instagram.png" alt="instagram" class="icon-img">
               </a>
                 
               </li>
             <li class="nav-item mb-1 d-flex">
               <a href="#" target="_blank">
-                <img src="../../static/img/icones/facebook.png" alt="facebook" class="icon-img">
+                <img src="/src/main/resources/static/img/icones/facebook.png" alt="facebook" class="icon-img">
               </a>
                 
               </li>          
@@ -200,11 +204,11 @@
           <form>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Endereço de Email" name="email-contato">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Endereço de Email">
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Em que podemos ajudar?</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text-area"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               <button type="submit" class="btn btn-dark mb-3 mt-3">Enviar</button>
             </div>
           </form>
