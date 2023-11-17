@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <title>Lista de Usuários</title>
+    <head>
+    <title>Lista de Usuarios</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="container mt-4">
-      <h2>Lista de Usuários</h2>
-
+      <h2>Lista de  Usuarios</h2>
+ 
       <!-- Formulário de pesquisa -->
       <form class="form-inline mb-2">
         <input
@@ -23,35 +23,45 @@
           >Pesquisar</button
         >
       </form>
-
+ 
       <table class="table">
         <thead>
           <tr>
             <th>ID</th>
-            <th>Nome</th>
-            <th>Email</th>
+            <th>Neurodiverso</th>
+           <th>Nome</th>
+            <th>Cpf</th>
             <th>Senha</th>
-            <th>Ações</th>
+            <th>Telefone</th>
+            <th>Datanascimento</th>
+            <th>Pessoadesuporte</th>
+            
           </tr>
         </thead>
         <tbody>
-          <!-- Substitua 'users' pelo nome da sua lista de usuários no controlador -->
+<!--          /* Substitua 'users' pelo nome da sua lista de usuários no controlador */-->
           <tr th:each="neurodiverso : ${neurodiversos}">
-            <td th:text="${neurodiverso.id_neurodiverso}"></td>
-            <td th:text="${neurodiverso.nome}"></td>
-            <td th:text="${neurodiverso.email}"></td>
-            <td th:text="${neurodiverso.senha}"></td>
+            <td th:text="${neurodiverso.id}"></td>
+           <td th:text="${neurodiverso.neurodivergencia}"></td>
+           <td th:text="${neurodiverso.nome}"></td>
+           <td th:text="${neurodiverso.cpf}"></td>
+           <td th:text="${neurodiverso.senha}"></td>
+           <td th:text="${neurodiverso.telefone}"></td>
+           <td th:text="${neurodiverso.datanascimento}"></td>
+           <td th:text="${neurodiverso.pessoadesuporte}"></td>
+          
+           
             <td>
-              <a
-                th:href="@{'/editar/' + ${neurodiverso.id_neurodiverso}}"
+             <a
+                th:href="@{'/neurodiverso/editar/' + ${neurodiverso.id}}"
                 class="btn btn-primary btn-sm"
-                >Editar</a
-              >
-              <a
-                th:href="@{'/excluir/' + ${neurodiverso.id_neurodiverso}}"
-                class="btn btn-danger btn-sm"
-                >Excluir</a
-              >
+               >Editar</a>
+              
+             <a
+               th:href="@{'/neurodiverso/deletar/' + ${neurodiverso.id}}"
+               class="btn btn-danger btn-sm"
+                >Excluir</a>
+                
             </td>
           </tr>
         </tbody>

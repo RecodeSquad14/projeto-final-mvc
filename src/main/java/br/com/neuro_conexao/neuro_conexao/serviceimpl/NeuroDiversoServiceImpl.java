@@ -23,9 +23,9 @@ private NeuroDiversoRepository neurodiversoRepository;
 	
 	@Override
 	@Transactional(readOnly = true)
-	public NeuroDiverso getNeuroDiversoById(long id_neurodiverso) {
+	public NeuroDiverso getNeuroDiversoById(Long id) {
 		
-		return neurodiversoRepository.findById(id_neurodiverso).orElse(null);
+		return neurodiversoRepository.findById(id).orElse(null);
 	}
 
 	@Override
@@ -36,9 +36,9 @@ private NeuroDiversoRepository neurodiversoRepository;
 	}
 
 	@Override
-	public NeuroDiverso updateNeuroDiverso(long id_neurodiverso, NeuroDiverso neurodiversoAtualizada) {
+	public NeuroDiverso updateNeuroDiverso(Long id, NeuroDiverso neurodiversoAtualizada) {
 
-	NeuroDiverso neurodiversoExistente = neurodiversoRepository.findById(id_neurodiverso).orElse(null);
+	NeuroDiverso neurodiversoExistente = neurodiversoRepository.findById(id).orElse(null);
 	if (neurodiversoExistente != null) {
 		neurodiversoExistente.setNeurodivergencia(neurodiversoAtualizada.getNeurodivergencia());
 		neurodiversoExistente.setNome(neurodiversoAtualizada.getNome());
@@ -51,15 +51,15 @@ private NeuroDiversoRepository neurodiversoRepository;
 		
 		
 	}else {
-		throw new RuntimeException("NueroDiverso com o ID" + id_neurodiverso + "nao encontrado.");
+		throw new RuntimeException("NueroDiverso com o ID" + id + "nao encontrado.");
 		
 	}
 	
 	
 	}
 
-	public void deleteNeuroDiverso(long id_neurodiverso) {
-		neurodiversoRepository.deleteById(id_neurodiverso);
+	public void deleteNeuroDiverso(Long id) {
+		neurodiversoRepository.deleteById(id);
 		
 	}
 }

@@ -1,6 +1,6 @@
 package br.com.neuro_conexao.neuro_conexao.model;
 
-import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,26 +13,28 @@ import jakarta.persistence.Table;
 public class NeuroDiverso {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-
-	private long id_neurodiverso;
+	private Long id;
 	private String neurodivergencia;
 	private String nome;
 	private String cpf;
 	private String senha;
 	private String telefone;
-	private Date datanascimento;
+	private String datanascimento;
 	@Column(columnDefinition = "TEXT")
 	private String pessoadesuporte;
+	
 
 	
 	public NeuroDiverso() {
 
 	}
 
-	public NeuroDiverso(long id_neurodiverso, String neurodivergencia, String nome, String cpf, String senha,
-			String telefone, Date datanascimento, String pessoadesuporte) {
+	
 
-		this.id_neurodiverso = id_neurodiverso;
+	public NeuroDiverso(Long id, String neurodivergencia, String nome, String cpf, String senha, String telefone,
+			String datanascimento, String pessoadesuporte) {
+		
+		this.id = id;
 		this.neurodivergencia = neurodivergencia;
 		this.nome = nome;
 		this.cpf = cpf;
@@ -42,12 +44,14 @@ public class NeuroDiverso {
 		this.pessoadesuporte = pessoadesuporte;
 	}
 
-	public long getInd_neurodiverso() {
-		return id_neurodiverso;
+
+
+	public Long getId() {
+		return id;
 	}
 
-	public void setInd_neurodiverso(long ind_neurodiverso, long id_neurodiverso) {
-		this.id_neurodiverso = id_neurodiverso;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getNeurodivergencia() {
@@ -90,11 +94,11 @@ public class NeuroDiverso {
 		this.telefone = telefone;
 	}
 
-	public Date getDatanascimento() {
+	public String getDatanascimento() {
 		return datanascimento;
 	}
 
-	public void setDatanascimento(Date datanascimento) {
+	public void setDatanascimento(String datanascimento) {
 		this.datanascimento = datanascimento;
 	}
 

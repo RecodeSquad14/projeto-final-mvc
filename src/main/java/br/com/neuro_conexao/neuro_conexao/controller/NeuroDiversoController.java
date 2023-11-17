@@ -1,7 +1,5 @@
 package br.com.neuro_conexao.neuro_conexao.controller;
 
-
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,14 +22,15 @@ public class NeuroDiversoController {
 	private NeuroDiversoService neurodiversoService;
 
 	// Listar
-	@GetMapping("/usuarios-adm")
+	@GetMapping("/neurodiverso")
 	public String listNeuroDiverso(Model model) {
 		List<NeuroDiverso> neurodiversos = neurodiversoService.getAllNeuroDiversos();
 		model.addAttribute("neurodiversos", neurodiversos);
-		return "/pages/usuarios-adm";
+		return "pages/usuarios-adm";
 	}
 
 	// Formulário de criação
+
 	@GetMapping("/novo")
 	public String showFormForAdd(Model model) {
 		NeuroDiverso neurodiverso = new NeuroDiverso();
@@ -40,33 +39,36 @@ public class NeuroDiversoController {
 	}
 
 	// Persistencia da criação
+
 	@PostMapping("/save")
-	public String saveNeurodiverso(@ModelAttribute("neurodiverso") NeuroDiverso neurodiverso) {
+	public String saveNeuroDiverso(@ModelAttribute("neurodiverso") NeuroDiverso neurodiverso) {
 		neurodiversoService.saveNeuroDiverso(neurodiverso);
-		return "redirect:/pages/forms/form-neurodiverso";
+		return"redirect:/neurodiverso/neurodiverso";
 	}
 
 	// Formulário de edição
-	@GetMapping("/editar/{id_neurodiverso}")
-	public String showFormForUpdate(@PathVariable long id_neurodiverso, Model model) {
-		NeuroDiverso neurodiverso = neurodiversoService.getNeuroDiversoById(id_neurodiverso);
+
+	@GetMapping("/editar/{id}")
+	public String showFormForUpdate(@PathVariable Long id, Model model) {
+		NeuroDiverso neurodiverso = neurodiversoService.getNeuroDiversoById(id);
 		model.addAttribute("neurodiverso", neurodiverso);
-		return "/pages/forms/form-neurodiverso";
+		return"/pages/forms/edit-forms/edit-form-neurodiverso";
 	}
 
 	// Persistencia da edição
-	@PostMapping("/editar/{id_neurodiverso}")
-	public String updateNeurodiverso(@PathVariable long id_neurodiverso, @ModelAttribute("neurodiverso") 
-	NeuroDiverso neurodiverso) {
-		neurodiversoService.updateNeuroDiverso(id_neurodiverso, neurodiverso);
-		return "redirect:/pages/forms/form-neurodiverso";
+
+	@PostMapping("/edit/{id}")
+	public String updateNeurodiverso(@PathVariable Long id, @ModelAttribute("neurodiverso") NeuroDiverso neurodiverso) {
+		neurodiversoService.updateNeuroDiverso(id, neurodiverso);
+		return"redirect:/neurodiverso/neurodiverso";
 	}
-	
-	// Excluir 
-	@GetMapping("/deletar/{id_neurodiverso}")
-	public String deleteNeurodiverso(@PathVariable long id_neurodiverso) { 
-		neurodiversoService.deleteNeuroDiverso(id_neurodiverso);
-		return "redirect:/pages/usuarios-adm";
+
+	// Excluir
+
+	@GetMapping("/deletar/{id}")
+	public String deleteNeurodiverso(@PathVariable Long id) {
+		neurodiversoService.deleteNeuroDiverso(id);
+		return"redirect:/neurodiverso/neurodiverso";
 	}
 
 }
