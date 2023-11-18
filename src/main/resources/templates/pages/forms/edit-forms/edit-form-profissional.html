@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,77 +32,35 @@
   <body>
     <div class="container">
       <h1 class="text-center mt-3">Atualização de Cadastro</h1>
-      <form>
-        <div class="form-group mb-3">
-          <label for="nome_completo" class="fw-bolder">Nome</label>
-          <input
-            type="text"
-            class="form-control"
-            id="nome_completo"
-            name="nome_completo"
-            required
-            placeholder="Insira seu nome"
-          />
-        </div>
-        <div class="form-group mb-3">
-          <label for="neurodivergencia" class="fw-bolder"
-            >Área de atuação</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="areadeatuacao"
-            name="areadeatuacao"
-            required
-            placeholder="Insira aqui a sua área de atuação"
-          />
-        </div>
-        <div class="form-group mb-3">
-          <label for="nome" class="fw-bolder">CRP</label>
-          <input
-            type="text"
-            class="form-control"
-            id="nome"
-            name="nome_crp_unico"
-            required
-            placeholder="Insira seu CRP"
-          />
-        </div>
-        <div class="form-group mb-3">
-          <label for="email" class="fw-bolder">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            name="email"
-            required
-            placeholder="Insira seu email profissional"
-          />
-        </div>
-        <div class="form-grou mb-3">
-          <label for="senha" class="fw-bolder">Senha</label>
-          <input
-            type="password"
-            class="form-control"
-            id="senha"
-            name="senha"
-            required
-            placeholder="Insira uma senha"
-          />
-        </div>
-
-        <div class="form-group mb-3">
-          <label for="data_nascimento" class="fw-bolder"
-            >Data de Nascimento</label
-          >
-          <input
-            type="date"
-            class="form-control"
-            id="data_nascimento"
-            name="data_nascimento"
-            required
-          />
-        </div>
+      <form th:action="@{/profissionais/editar/{id}(id=${profissional.id})}" th:object="${profissional}" method="post">
+       
+       	<div class="form-group mb-3">
+				<label for="nome_completo" class="fw-bolder">Nome</label>
+				<input type="text" class="form-control" id="nome_completo" name="nome_completo" required
+					placeholder="Insira seu nome" th:field="*{nome}">
+			</div>
+			<div class="form-group mb-3">
+				<label for="neurodivergencia" class="fw-bolder">Área de atuação</label>
+				<input type="text" class="form-control" id="area_de_atuacao" name="area_de_atuacao" th:readonly="readonly">
+			</div>
+			<div class="form-group mb-3">
+				<label for="nome" class="fw-bolder">Nome CRP Único</label>
+				<input type="text" class="form-control" id="nome" name="nome_crp_unico" th:readonly="readonly">
+			</div>
+			<div class="form-group mb-3">
+				<label for="cpf" class="fw-bolder">Cpf</label>
+				<input type="cpf" class="form-control" id="cpf" name="cpf" th:readonly="readonly">
+			</div>
+			<div class="form-group mb-3">
+				<label for="email" class="fw-bolder">Email</label>
+				<input type="email" class="form-control" id="email" name="email" required
+					placeholder="Insira seu Email" th:field="*{email}">
+			</div>
+			<div class="form-grou mb-3">
+				<label for="senha" class="fw-bolder">Senha</label>
+				<input type="password" class="form-control" id="senha" name="senha" required
+					placeholder="Insira uma senha" th:field="*{senha}">
+			</div>
         <button type="submit" class="btn btn-dark">Atualizar</button>
       </form>
     </div>

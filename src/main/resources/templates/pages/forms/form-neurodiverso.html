@@ -3,10 +3,10 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário em Bootstrap</title>
+  <title>Cadastro do Neurodiverso</title>
  
   <link rel="shortcut icon" href="../../static/img/logo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../../static/css/style.css">
+  <link rel="stylesheet" href="/src/main/resources/static/css/style.css">
  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +21,7 @@
     <form th:action="@{/neurodiverso/save}" th:object="${neurodiverso}" method="post">
     <div class="container mt-5">
       <form>
+<<<<<<< HEAD
         <div class="form-group mb-3">
           <label for="neurodivergencia" class="fw-bolder">Neurodivergência:</label>
           <input
@@ -40,8 +41,14 @@
             id="nome"
             th:field="*{nome}"
             placeholder="Digite seu nome"
+=======
+        
+        
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
           />
         </div>
+
+        
 
         <div class="form-group mb-3">
           <label for="cpf" class="fw-bolder">CPF:</label>
@@ -51,6 +58,17 @@
             id="cpf"
             th:field="*{cpf}"
             placeholder="Digite seu CPF"
+            required
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label for="cpf" class="fw-bolder">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Digite seu Email"
+            required
           />
         </div>
 
@@ -62,6 +80,7 @@
             id="senha"
              th:field="*{senha}"
             placeholder="Digite sua senha"
+            required
           />
         </div>
 
@@ -73,13 +92,28 @@
             id="telefone"
              th:field="*{telefone}"
             placeholder="Digite seu telefone"
+            required
           />
         </div>
 
         <div class="form-group mb-3 mb-3">
           <label for="dataNascimento" class="fw-bolder">Data de Nascimento:</label>
+<<<<<<< HEAD
           <input type="date" class="form-control" id="dataNascimento"  th:field="*{datanascimento}"/>
           
+=======
+          
+        </div>
+        <div class="form-group mb-3">
+          <label for="neurodivergencia" class="fw-bolder">Neurodivergência:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="neurodivergencia"
+            placeholder="Informe sua neurodivergência"
+            required
+          />
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
         </div>
 
         <div class="form-group mb-3">

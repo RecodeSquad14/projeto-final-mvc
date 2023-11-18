@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>neuro_conexao</name>
+=======
+	<name>projeto-final-mvc</name>
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
 	<comment></comment>
 	<projects>
 	</projects>
@@ -25,4 +29,22 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+<<<<<<< HEAD
+=======
+	<filteredResources>
+		<filter>
+<<<<<<< HEAD
+			<id>1700155704703</id>
+=======
+			<id>1700157301116</id>
+>>>>>>> df60d3801f7956474e0253e274528474d4964306
+			<name></name>
+			<type>30</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
 </projectDescription>

@@ -10,5 +10,4 @@ public class NeuroConexaoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(NeuroConexaoApplication.class, args);
 	}
-
 }
