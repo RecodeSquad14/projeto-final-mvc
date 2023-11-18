@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Início</title>
-    <link rel="shortcut icon" href="../static/img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/main/resources/static/img/logo.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Importação da fonte -->
 
+<<<<<<< HEAD
     <link rel="stylesheet" href="../static/css/style.css" th:href="@{css/style.css}"/>
+=======
+    <link rel="stylesheet" href="/src/main/resources/static/css/style.css" />
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
     <!-- Importação do arquivo CSS que vamos editar -->
     
     <link
@@ -22,7 +26,7 @@
     />
     <!-- Importação do arquivo CSS do bootstrap -->
 
-    <!-- Importação do AOS -->
+     <!-- Importação do AOS -->
   </head>
   <body>
 
@@ -46,7 +50,11 @@
         >
           <ul class="navbar-nav">       
             <li>
+<<<<<<< HEAD
               <img width="40px" src="../static/img/logo.png" th:attr="src=@{/img/logo.png}" alt=""/>
+=======
+              <img width="40px" src="/src/main/resources/static/img/logo.png" alt=""/>
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
             </li>              
             <li class="nav-item">              
               <a class="nav-link active" aria-current="page" href="#">Neuro Conexão</a>
@@ -55,14 +63,21 @@
               <a class="nav-link active" aria-current="page" href="#">Início</a>
             </li>
             <li class="nav-item">
+<<<<<<< HEAD
               <a class="nav-link"  >Conexões</a>
+=======
+              <a class="nav-link" href="/src/main/resources/templates/pages/conexao.html">Conexões</a>
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/treinamento.html">Treinamento</a>
+              <a class="nav-link" href="/src/main/resources/templates/pages/treinamento.html">Treinamento</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/sobrenos.html">Sobre nós</a>
+              <a class="nav-link" href="/src/main/resources/templates/pages/sobrenos.html">Sobre nós</a>
             </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="/src/main/resources/templates/pages/login.html">Login</a>
+            </li>
           </ul>         
       </div>
     </nav>  
@@ -75,10 +90,14 @@
         <div class="about-content">
           <h1 class="about-title">Nossa missão é ajudar pessoas neurodiversas a encontrar uma empresa inclusiva</h1>
           <p id="about-paragraph">Bem-vindos ao nosso espaço inclusivo e inovador, onde a neurodiversidade encontra oportunidade. Nosso site é o ponto de encontro entre pessoas neurodivergentes e empresas comprometidas com a inclusão.</p>
-        <button class=" about-btn"><a href="./pages/conexao.html">Conecte-se</a></button>
+        <button class=" about-btn"><a href="/src/main/resources/templates/pages/conexao.html">Conecte-se</a></button>
         </div>
         <div class="about-img">
+<<<<<<< HEAD
           <img src="../static/img/home-img/hero-image.png" th:attr="src=@{/img/home-img/hero-image.png}" alt="três pessoas felizes pulando" id="hero-img">
+=======
+          <img src="/src/main/resources/static/img/3d-casual-life-young-boys-and-young-girl-jumping.png" alt="três pessoas felizes pulando" id="hero-img">
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
         </div>
       </section>      
     </section>
@@ -86,15 +105,24 @@
 
     <!-- Início do conteúdo -->
     <section class="cards-section container">
-      <div class="card mb-3 card-bg " style="max-width: 95%; border:none;min-height:50vh;">
+      <div class="card mb-3 card-bg" style="max-width: 95%; border:none;min-height:50vh;">
         <div class="row g-0">
           <div class="col-md-4" data-aos="fade-right">
+<<<<<<< HEAD
             <img src="../static/img/home-img/conexao.png" th:attr="src=@{/img/home-img/conexao.png}" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <h3 class="card-title mb-5">Conecte-se</h3>
               <p class="card-text mt-5" style="font-size: 1.4375rem;" data-aos="fade-left">Exploramos a emocionante possibilidade de desenvolver uma página de conexão que funcione como um sistema de combinação entre empresas e profissionais neurodiversos. Inspirados em plataformas de "matchmaking", nossa visão é criar um espaço onde empresas em busca de talentos únicos possam ser conectadas.</p>
+=======
+            <img src="/src/main/resources/static/img/home-img/conexao.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title mb-5 fw-bolder">Conecte-se</h3>
+              <p class="card-text mt-5" style="font-size: 1.4375rem;" <div data-aos="fade-left">Exploramos a emocionante possibilidade de desenvolver uma página de conexão que funcione como um sistema de combinação entre empresas e profissionais neurodiversos. Inspirados em plataformas de "matchmaking", nossa visão é criar um espaço onde empresas em busca de talentos únicos possam ser conectadas.</p>
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
               </div>
           </div>
         </div>
@@ -105,13 +133,17 @@
         <div class="row g-0">
           <div class="col-md-8">
             <div class="card-body">
-              <h3 class="card-title  mb-5">Treinamento em 3 etapas</h3>
+              <h3 class="card-title  mb-5 fw-bolder">Treinamento em 3 etapas</h3>
               <p class="card-text mt-5"  style="font-size: 1.4375rem;" data-aos="fade-right">Planejamos uma página de treinamento para empresas, famílias e especialistas em neurodiversidade, visando capacitar colaborações produtivas com profissionais neurodiversos e fornecer orientações essenciais. Essa iniciativa busca fortalecer a inclusão e o entendimento mútuo.</p>
              
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-left">
+<<<<<<< HEAD
             <img src="../static/img/home-img/treinamento.png" th:attr="src=@{/img/home-img/treinamento.png}" class="img-fluid rounded-start" alt="...">
+=======
+            <img src="/src/main/resources/static/img/home-img/treinamento.png" class="img-fluid rounded-start" alt="...">
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
           </div>
         </div>
       </div>
@@ -121,11 +153,15 @@
       <div class="card mb-3 mt-5 card-bg" style="max-width: 95%; border:none;min-height:50vh;">
         <div class="row g-0">
           <div class="col-md-4" data-aos="fade-right">
+<<<<<<< HEAD
             <img src="../static/img/home-img/squad14.png"  th:attr="src=@{/img/home-img/squad14.png}" class="img-fluid rounded-start" alt="...">
+=======
+            <img src="/src/main/resources/static/img/home-img/squad14.png" class="img-fluid rounded-start" alt="...">
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h3 class="card-title mb-5">Quem somos nós</h3>
+              <h3 class="card-title mb-5 fw-bolder">Quem somos nós</h3>
               <p class="card-text mt-5"  style="font-size: 1.4375rem;" data-aos="fade-left">Nós, do Squad 14 da Recodepro 2023, somos uma equipe de seis alunos do bootcamp de fullstack. Estamos criando um site neurodiverso que reflete nossa paixão pelo desenvolvimento web e nosso compromisso com a inclusão.</p>
               
             </div>
@@ -144,10 +180,10 @@
             
             <ul class="nav flex-column">
 
-              <li class="nav-item mb-1"><a href="index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
-              <li class="nav-item mb-1"><a href="pages/conexao.html" class="nav-link p-0 text-body-secondary">Conexão</a></li>
-              <li class="nav-item mb-1"><a href="pages/treinamento.html" class="nav-link p-0 text-body-secondary">Treinamento</a></li>             
-
+              <li class="nav-item mb-1"><a href="/src/main/resources/templates/index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+              <li class="nav-item mb-1"><a href="/src/main/resources/templates/pages/conexao.html" class="nav-link p-0 text-body-secondary">Conexão</a></li>
+              <li class="nav-item mb-1"><a href="/src/main/resources/templates/pages/treinamento.html" class="nav-link p-0 text-body-secondary">Treinamento</a></li>             
+              <li class="nav-item mb-1"><a href="/src/main/resources/templates/pages/sobrenos.html" class="nav-link p-0 text-body-secondary">Contatos</a></li>
 
             </ul>       
           </div>
@@ -158,19 +194,31 @@
             <ul class="nav flex-column">
               <li class="nav-item mb-1 d-flex">
                 <a href="#" target="_blank">
+<<<<<<< HEAD
                   <img src="../static/img/icones/whatsapp.png" th:attr="src=@{/img/icones/whatsapp.png}" alt="whatsapp" class="icon-img">
+=======
+                  <img src="/src/main/resources/static/img/icones/whatsapp.png" alt="whatsapp" class="icon-img"">
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
                 </a>
                 
                 </li>
               <li class="nav-item mb-1 d-flex">
                 <a href="#" target="_blank">
+<<<<<<< HEAD
                   <img src="../static/img/icones/instagram.png" th:attr="src=@{/img/icones/instagram.png}" alt="instagram" class="icon-img">
+=======
+                  <img src="/src/main/resources/static/img/icones/instagram.png" alt="instagram" class="icon-img">
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
                 </a>
                   
                 </li>
               <li class="nav-item mb-1 d-flex">
                 <a href="#" target="_blank">
+<<<<<<< HEAD
                   <img src="../static/img/icones/facebook.png" th:attr="src=@{/img/icones/facebook.png}" alt="facebook" class="icon-img">
+=======
+                  <img src="/src/main/resources/static/img/icones/facebook.png" alt="facebook" class="icon-img">
+>>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
                 </a>
                   
                 </li>          
@@ -181,11 +229,11 @@
             <form>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Endereço de Email" name="email-contato">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Endereço de Email">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Em que podemos ajudar?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text-area"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 <button type="submit" class="btn btn-dark mb-3 mt-3">Enviar</button>
               </div>
             </form>
