@@ -41,15 +41,15 @@
 			</div>
 			<div class="form-group mb-3">
 				<label for="neurodivergencia" class="fw-bolder">Área de atuação</label>
-				<input type="text" class="form-control" id="area_de_atuacao" name="area_de_atuacao" th:readonly="readonly">
+				<input type="text" th:value="${profissional.area_de_atuacao}" class="form-control" id="area_de_atuacao" name="area_de_atuacao" th:readonly="readonly">
 			</div>
 			<div class="form-group mb-3">
 				<label for="nome" class="fw-bolder">Nome CRP Único</label>
-				<input type="text" class="form-control" id="nome" name="nome_crp_unico" th:readonly="readonly">
+				<input type="text" th:value="${profissional.crp}" class="form-control" id="nome" name="nome_crp_unico" th:readonly="readonly">
 			</div>
 			<div class="form-group mb-3">
 				<label for="cpf" class="fw-bolder">Cpf</label>
-				<input type="cpf" class="form-control" id="cpf" name="cpf" th:readonly="readonly">
+				<input type="cpf" th:value="${profissional.cpf}" class="form-control" id="cpf" name="cpf" th:readonly="true" >
 			</div>
 			<div class="form-group mb-3">
 				<label for="email" class="fw-bolder">Email</label>
