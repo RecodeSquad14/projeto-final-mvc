@@ -1,4 +1,4 @@
-package br.com.neuro_conexao.neuro_conexao.serviceimpl;
+package br.com.neuro_conexao.neuro_conexao.servicesImpl;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import br.com.neuro_conexao.neuro_conexao.model.NeuroDiverso;
 import br.com.neuro_conexao.neuro_conexao.repositories.NeuroDiversoRepository;
-import br.com.neuro_conexao.neuro_conexao.service.NeuroDiversoService;
+import br.com.neuro_conexao.neuro_conexao.services.NeuroDiversoService;
 
 @Service
 public class NeuroDiversoServiceImpl implements NeuroDiversoService {

@@ -1,4 +1,4 @@
-package br.com.neuro_conexao.neuro_conexao.service;
+package br.com.neuro_conexao.neuro_conexao.services;
 
 import java.util.List;
 import br.com.neuro_conexao.neuro_conexao.model.NeuroDiverso;

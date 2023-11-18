@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.neuro_conexao.neuro_conexao.model.NeuroDiverso;
-import br.com.neuro_conexao.neuro_conexao.service.NeuroDiversoService;
+import br.com.neuro_conexao.neuro_conexao.services.NeuroDiversoService;
 
 @Controller
 @RequestMapping("/neurodiverso")
