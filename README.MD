@@ -50,7 +50,7 @@ As cores principais utilizadas no projeto foram escolhidas de modo a passar uma 
 
 ## Stacks utilizadas
 
-**Front-end:** HTML5, CSS3
+**Front-end:** HTML5, CSS3, Bootstrap
 
-**Back-end:** Br-modelo
+**Back-end:** Br-modelo, Java
 
