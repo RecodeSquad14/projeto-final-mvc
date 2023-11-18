@@ -3,36 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../static/css/style.css">
-    <title>Login e Cadastro</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  	<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <title>Treinamento</title>
+    <link
+      rel="shortcut icon"
+      href="/src/main/resources/static/img/logo.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/main/resources/static/css/style.css" />
+    <!-- Importação do arquivo CSS que vamos editar -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- Importação do arquivo CSS do bootstrap -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importação da fonte -->
   </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="text-center">Login</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="usuario">Usuário:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="usuario"
+                    name="usuario"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="senha">Senha:</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="senha"
+                    name="senha"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-dark btn-block mt-3"
+                  >Enviar</button
+                >
+              </form>
+            </div>
+            <div class="card-footer text-center">
+              <p class="mb-0"
+                >Ainda não é cadastrado?
+                <a href="./conexao.html#cadastro">Cadastre-se</a></p
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<body class="login-body">
-		<div class="fundo-lado-esquerdo">
-			<div class="lado-esquerdo-text">
-				<h2>Seja bem-vindo (a)</h2>
-				<!-- <p>Selecione seu perfil e faça login em nosso s1ite:</p> -->
-			</div>
-
-			<img class="login-imagem" src="../../static/img/treinamento-img/neurodiverso.png">
-		</div>
-			
-		<div class="container">	
-  			<div class="form">
-					<h2>Acesse sua conta</h2>
-					<form action="#" method="POST">
-						<input type="text" placeholder="Usuário" name="username" required>
-						<input type="password" placeholder="Senha" name="password" required>
-						<a class="button"  href="../vagas/vagas.html" type="submit">Entrar</a>
-                        <a href="login.html">Ainda não é cadastrado?</a>
-						<button class="btn-header" type="submit"><a href="../index.html">Voltar</button></a>
-					</form>
-			</div>
-				
-		</div>
-	</body>
-	
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
