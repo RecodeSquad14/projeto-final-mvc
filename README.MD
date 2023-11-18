@@ -39,9 +39,9 @@ As cores principais utilizadas no projeto foram escolhidas de modo a passar uma 
 
 - Marconi Sena da Silva [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marconi-sena/)
 
-- Marcos Paulo Daniel Custódio [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]()
+- Marcos Paulo Daniel Custódio [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
 
-- Matheus Renato Marques Albieri [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]()
+- Matheus Renato Marques Albieri [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
 
 
 
