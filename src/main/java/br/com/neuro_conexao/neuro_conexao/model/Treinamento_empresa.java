@@ -21,11 +21,14 @@ public class Treinamento_empresa {
 	@ManyToOne
 	@JoinColumn(name = "profissional_id", nullable = false)
 	private Profissional profissional;
+	
+    private String descricao;
 
+	
 	public Treinamento_empresa() {
 	}
 
-	public Treinamento_empresa(Long id, String tipo_treinamento) {
+	public Treinamento_empresa(Long id, String tipo_treinamento, String descricao) {
 		this.id = id;
 		this.tipo_treinamento = tipo_treinamento;
 	}
@@ -44,6 +47,22 @@ public class Treinamento_empresa {
 
 	public void setTipo_treinamento(String tipo_treinamento) {
 		this.tipo_treinamento = tipo_treinamento;
+	}
+	
+	public Profissional getProfissional() {
+		return profissional;
+	}
+
+	public void setProfissional(Profissional profissional) {
+		this.profissional = profissional;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 }

@@ -28,7 +28,7 @@
       <div class="row justify-content-center">
         <div class="col-md-6">
           <!-- Formulário -->
-          <form>
+          <form th:action="@{/empresas/editar/{id} (id=${empresa.id_empresa})}" th:object="${empresa}" method="post">
             <!-- CNPJ -->
             <div class="form-group mb-3">
               <label class="fw-bolder" for="cnpj">CNPJ da Empresa:</label>
@@ -37,6 +37,7 @@
                 class="form-control"
                 id="cnpj"
                 name="cnpj_unico"
+                th:field="*{cnpj}"
                 placeholder="Informe o CNPJ"
               />
             </div>
@@ -49,6 +50,7 @@
                 class="form-control"
                 id="endereco"
                 name="endereco"
+                th:field="*{endereco}"
                 placeholder="Informe o Endereço"
                 required
               />
@@ -62,6 +64,7 @@
                 class="form-control"
                 id="email"
                 name="email_corporativo"
+                th:field="*{email_corporativo}"
                 placeholder="Informe o Email Corporativo"
                 required
               />
@@ -75,6 +78,7 @@
                 class="form-control"
                 id="senha"
                 name="Id_empresa"
+                th:field="*{senha}"
                 placeholder="Informe a Senha"
                 required
               />

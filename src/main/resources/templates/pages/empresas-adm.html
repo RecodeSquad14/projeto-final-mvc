@@ -38,19 +38,19 @@
         <tbody>
           <!-- Substitua 'users' pelo nome da sua lista de usuários no controlador -->
           <tr th:each="empresa : ${empresas}">
-            <td th:text="${empresa.id}"></td>
+            <td th:text="${empresa.id_empresa}"></td>
             <td th:text="${empresa.cnpj}"></td>
             <td th:text="${empresa.endereco}"></td>
-            <td th:text="${user.email}"></td>
-            <td th:text="${user.senha}"></td>
+            <td th:text="${empresa.email_corporativo}"></td>
+            <td th:text="${empresa.senha}"></td>
             <td>
               <a
-                th:href="@{'/editar/' + ${empresa.id}}"
+                th:href="@{'/empresas/editar/' + ${empresa.id_empresa}}"
                 class="btn btn-primary btn-sm"
                 >Editar</a
               >
               <a
-                th:href="@{'/excluir/' + ${empresa.id}}"
+                th:href="@{'/empresas/deletar/' + ${empresa.id_empresa}}"
                 class="btn btn-danger btn-sm"
                 >Excluir</a
               >

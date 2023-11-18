@@ -16,19 +16,17 @@ import br.com.neuro_conexao.neuro_conexao.model.Treinamento_familiares;
 import br.com.neuro_conexao.neuro_conexao.services.Treinamento_familiaresService;
 
 @Controller
-@RequestMapping("/#")
+@RequestMapping("/treinamento")
 public class Treinamento_familiaresController {
 
 	@Autowired
 	private Treinamento_familiaresService treinamento_familiaresService;
 
 	// Listar
-	@GetMapping("/#-adm")
+	@GetMapping
 	public String listTreinamento_familiares(Model model) {
 		List<Treinamento_familiares> treinamento_familiares = treinamento_familiaresService.getAllTreinamento_familiares();
 		model.addAttribute("treinamento_familiares", treinamento_familiares);
-		return "/pages/profissional-adm";
+		return "#";
 	}
-
-	
 }

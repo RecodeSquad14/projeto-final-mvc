@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Lista de Profissionais</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h2>Lista de Profissionais</h2>
+
+      <!-- Formulário de pesquisa -->
+      <form th:action="@{/usuarios}" method="get" class="form-inline mb-2">
+        <input
+          type="text"
+          th:name="keyword"
+          class="form-control mr-sm-2"
+          placeholder="Pesquisar por nome"
+        />
+        <button type="submit" class="btn btn-outline-success my-2 my-sm-0"
+          >Pesquisar</button
+        >
+      </form>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Senha</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Substitua 'users' pelo nome da sua lista de usuários no controlador -->
+          <tr th:each="profissional : ${profissionais}">
+            <td th:text="${profissional.id}"></td>
+            <td th:text="${profissional.nome}"></td>
+            <td th:text="${profissional.email}"></td>
+            <td th:text="${profissional.senha}"></td>
+            <td>
+              <a
+                th:href="@{'/editar/' + ${profissional.id}}"
+                class="btn btn-primary btn-sm"
+                >Editar</a
+              >
+              <a
+                th:href="@{'/excluir/' + ${profissional.id}}"
+                class="btn btn-danger btn-sm"
+                >Excluir</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
