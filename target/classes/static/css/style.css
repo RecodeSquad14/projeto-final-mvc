@@ -122,18 +122,6 @@ hr {
 /* TREINAMENTO */
 .conteiner-treinamento {
   display: flex;
-<<<<<<< HEAD
-=======
-  /* Centraliza o conteúdo horizontalmente */
-  /* Alinha os cards no início verticalmente */
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  max-height: 150px;
->>>>>>> df60d3801f7956474e0253e274528474d4964306
   align-items: center;
   justify-content: center;
   min-height: 90vh;
@@ -161,13 +149,10 @@ hr {
   box-shadow: 20px 20px 50px -30px var(--cor-terciaria);
 }
 
-<<<<<<< HEAD
 .text-treinamento {
   text-indent: 20px;
 }
 
-=======
->>>>>>> df60d3801f7956474e0253e274528474d4964306
 /* FOOTER */
 
 .footerstyle {
