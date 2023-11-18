@@ -21,7 +21,7 @@
     <form th:action="@{/neurodiverso/save}" th:object="${neurodiverso}" method="post">
     <div class="container mt-5">
       <form>
-<<<<<<< HEAD
+
         <div class="form-group mb-3">
           <label for="neurodivergencia" class="fw-bolder">Neurodivergência:</label>
           <input
@@ -41,11 +41,7 @@
             id="nome"
             th:field="*{nome}"
             placeholder="Digite seu nome"
-=======
-        
-        
->>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
-          />
+			 />
         </div>
 
         
@@ -67,6 +63,7 @@
             type="email"
             class="form-control"
             id="email"
+             th:field="*{Email}"
             placeholder="Digite seu Email"
             required
           />
@@ -98,22 +95,9 @@
 
         <div class="form-group mb-3 mb-3">
           <label for="dataNascimento" class="fw-bolder">Data de Nascimento:</label>
-<<<<<<< HEAD
+
           <input type="date" class="form-control" id="dataNascimento"  th:field="*{datanascimento}"/>
           
-=======
-          
-        </div>
-        <div class="form-group mb-3">
-          <label for="neurodivergencia" class="fw-bolder">Neurodivergência:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="neurodivergencia"
-            placeholder="Informe sua neurodivergência"
-            required
-          />
->>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
         </div>
 
         <div class="form-group mb-3">

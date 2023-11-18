@@ -1,6 +1,5 @@
 package br.com.neuro_conexao.neuro_conexao.model;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,34 +16,30 @@ public class NeuroDiverso {
 	private String neurodivergencia;
 	private String nome;
 	private String cpf;
+	private String email;
 	private String senha;
 	private String telefone;
 	private String datanascimento;
 	@Column(columnDefinition = "TEXT")
 	private String pessoadesuporte;
-	
 
-	
 	public NeuroDiverso() {
 
 	}
 
-	
+	public NeuroDiverso(Long id, String neurodivergencia, String nome, String cpf, String email, String senha,
+			String telefone, String datanascimento, String pessoadesuporte) {
 
-	public NeuroDiverso(Long id, String neurodivergencia, String nome, String cpf, String senha, String telefone,
-			String datanascimento, String pessoadesuporte) {
-		
 		this.id = id;
 		this.neurodivergencia = neurodivergencia;
 		this.nome = nome;
 		this.cpf = cpf;
+		this.email = email;
 		this.senha = senha;
 		this.telefone = telefone;
 		this.datanascimento = datanascimento;
 		this.pessoadesuporte = pessoadesuporte;
 	}
-
-
 
 	public Long getId() {
 		return id;
@@ -76,6 +71,14 @@ public class NeuroDiverso {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getSenha() {
@@ -110,5 +113,4 @@ public class NeuroDiverso {
 		this.pessoadesuporte = pessoadesuporte;
 	}
 
-	
 }
