@@ -4,8 +4,6 @@
 
 O site Neuro Conexão tem como objetivo ajudar pessoas neurodivergentes a se conectar com empresas, além de auxiliar através de treinamentos, tanto pessoas neurodivergentes, empresas, pessoas de suporte e familiares durante o processo de empregabilidade.
 
-<h1><a href="https://recodesquad14.github.io/projeto-final/index.html" target="_blank"> Link para nosso site</a></h1>
-
 ## Documentação de cores
 
 As cores principais utilizadas no projeto foram escolhidas de modo a passar uma agradabilidade para qualquer tipo de pessoa, tendo um contraste e equilíbrio entre si, além de tons violetas remeterem a diversidade, inovação e tecnologia. 
@@ -36,6 +34,18 @@ As cores principais utilizadas no projeto foram escolhidas de modo a passar uma 
 - Anderson Borba Silva [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anderson-borba-silva-54592481/)
 
 - Anderson Soares da Rocha Silva (Vice-Líder) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anderson-rocha-silva/)
+
+- Marcelle dos Santos [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelle-santos-170995163/)
+
+- Marconi Sena da Silva [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marconi-sena/)
+
+- Marcos Paulo Daniel Custódio [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]()
+
+- Matheus Renato Marques Albieri [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]()
+
+
+
+
 
 
 ## Stacks utilizadas
