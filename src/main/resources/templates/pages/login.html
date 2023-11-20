@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -67,14 +67,14 @@
                   />
                 </div>
                 <button type="submit" class="btn btn-dark btn-block mt-3"
-                  >Enviar</button
+                  >Entrar</button
                 >
               </form>
             </div>
             <div class="card-footer text-center">
               <p class="mb-0"
                 >Ainda não é cadastrado?
-                <a href="./conexao.html#cadastro">Cadastre-se</a></p
+                <a th:href="@{/conexao#cadastro}">Cadastre-se</a></p
               >
             </div>
           </div>
