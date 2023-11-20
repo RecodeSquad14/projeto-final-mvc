@@ -19,11 +19,8 @@ As cores principais utilizadas no projeto foram escolhidas de modo a passar uma 
 
 - Modelo conceitual
 
- <img src="BancodeDados/ModeloConceitual.jpg" alt="ModeloConceitual">
+ <img src="src/main/resources/static/img/Conceitual.png" alt="ModeloConceitual">
 
-- Modelo lógico
-
-<img src="BancodeDados/ModeloLogico.png" alt="ModeloLogico">
 
 ## Membro do projeto
 ### Alunos: 
