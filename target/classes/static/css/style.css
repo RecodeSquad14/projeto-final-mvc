@@ -137,17 +137,8 @@ hr {
   box-shadow: 20px 20px 50px -30px var(--cor-primaria);
 }
 
-<<<<<<< HEAD
-.card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
- /* width: 300px;  largura do card */
-  /* outros estilos */
-=======
 .card-treinamento1 {
   box-shadow: 20px 20px 50px -30px var(--cor-primaria);
->>>>>>> 2bc29fdb45d0ea916bd415d5c3507ed5d7553f4d
 }
 
 .card-treinamento2 {
